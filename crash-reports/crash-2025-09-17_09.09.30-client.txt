@@ -1,0 +1,62 @@
+---- Minecraft Crash Report ----
+// I bet Cylons wouldn't have this problem.
+
+Time: 17.09.2025, 09:09
+Description: Initializing game
+
+java.lang.RuntimeException: Failed to read font data file: minecraft:onelove/fonts/Montserrat-Regular.ttf.json; Are you sure this is json file? Try to check the correctness of its syntax.
+	at ru.onelove.utils.render.font.MsdfFont$Builder.build(MsdfFont.java:127)
+	at ru.onelove.utils.render.font.Font.<init>(Font.java:30)
+	at ru.onelove.utils.render.font.Fonts.register(Fonts.java:8)
+	at net.minecraft.client.Minecraft.<init>(Minecraft.java:465)
+	at net.minecraft.client.main.Main.main(Main.java:156)
+	at Start.main(Start.java:11)
+
+
+A detailed walkthrough of the error, its code path and all known details is as follows:
+---------------------------------------------------------------------------------------
+
+-- Head --
+Thread: Render thread
+Stacktrace:
+	at ru.onelove.utils.render.font.MsdfFont$Builder.build(MsdfFont.java:127)
+	at ru.onelove.utils.render.font.Font.<init>(Font.java:30)
+	at ru.onelove.utils.render.font.Fonts.register(Fonts.java:8)
+	at net.minecraft.client.Minecraft.<init>(Minecraft.java:465)
+
+-- Initialization --
+Details:
+Stacktrace:
+	at net.minecraft.client.main.Main.main(Main.java:156)
+	at Start.main(Start.java:11)
+
+-- System Details --
+Details:
+	Minecraft Version: 1.16.5
+	Minecraft Version ID: 1.16.5
+	Operating System: Windows 11 (amd64) version 10.0
+	Java Version: 21.0.7, Oracle Corporation
+	Java VM Version: Java HotSpot(TM) 64-Bit Server VM (mixed mode, sharing), Oracle Corporation
+	Memory: 54760784 bytes (52 MB) / 201326592 bytes (192 MB) up to 2067791872 bytes (1972 MB)
+	CPUs: 8
+	JVM Flags: 0 total; 
+	Launched Version: mcp
+	Backend library: LWJGL version 3.2.2 build 10
+	Backend API: Intel(R) UHD Graphics GL version 4.6.0 - Build 31.0.101.4255, Intel
+	GL Caps: Using framebuffer using OpenGL 3.0
+	Using VBOs: Yes
+	Is Modded: Very likely; Jar signature invalidated
+	Type: Client (map_client.txt)
+	CPU: 8x 12th Gen Intel(R) Core(TM) i3-1215U
+	OptiFine Version: OptiFine_1.16.5_HD_U_G8
+	OptiFine Build: ~~NULL~~
+	Render Distance Chunks: 15
+	Mipmaps: 4
+	Anisotropic Filtering: 1
+	Antialiasing: 0
+	Multitexture: false
+	Shaders: null
+	OpenGlVersion: 4.6.0 - Build 31.0.101.4255
+	OpenGlRenderer: Intel(R) UHD Graphics
+	OpenGlVendor: Intel
+	CpuCount: 8

@@ -1,0 +1,9 @@
+{
+  "minecraft:adventure/adventuring_time": {
+    "criteria": {
+      "minecraft:desert_hills": "2025-09-10 18:07:17 +0300"
+    },
+    "done": false
+  },
+  "DataVersion": 2586
+}

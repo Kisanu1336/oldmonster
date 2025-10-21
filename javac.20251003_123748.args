@@ -1,0 +1,5 @@
+-cp
+libs/baritone-standalone-1.6.5.jar;libs/slf4j-api-2.0.9.jar
+-d
+out/production/client
+@java_files.txt

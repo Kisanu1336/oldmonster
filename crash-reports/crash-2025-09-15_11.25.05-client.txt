@@ -1,0 +1,72 @@
+---- Minecraft Crash Report ----
+// Hey, that tickles! Hehehe!
+
+Time: 15.09.2025, 11:25
+Description: Unexpected error
+
+java.lang.NullPointerException: Cannot invoke "ru.onelove.functions.impl.combat.NoEntityTrace.isState()" because "noEntityTrace" is null
+	at net.minecraft.client.renderer.GameRenderer.getMouseOver(GameRenderer.java:343)
+	at net.minecraft.client.Minecraft.runTick(Minecraft.java:1496)
+	at net.minecraft.client.Minecraft.runGameLoop(Minecraft.java:956)
+	at net.minecraft.client.Minecraft.run(Minecraft.java:570)
+	at net.minecraft.client.main.Main.main(Main.java:191)
+	at Start.main(Start.java:11)
+
+
+A detailed walkthrough of the error, its code path and all known details is as follows:
+---------------------------------------------------------------------------------------
+
+-- Head --
+Thread: Render thread
+Stacktrace:
+	at net.minecraft.client.renderer.GameRenderer.getMouseOver(GameRenderer.java:343)
+
+-- Affected level --
+Details:
+	All players: 1 total; [ClientPlayerEntity['fgst_942'/207, l='ClientLevel', x=-202.45, y=70.00, z=51.75]]
+	Chunk stats: Client Chunk Cache: 121, 30
+	Level dimension: minecraft:overworld
+	Level spawn location: World: (-240,69,224), Chunk: (at 0,4,0 in -15,14; contains blocks -240,0,224 to -225,255,239), Region: (-1,0; contains chunks -32,0 to -1,31, blocks -512,0,0 to -1,255,511)
+	Level time: 103015 game time, 103015 day time
+	Server brand: vanilla
+	Server type: Integrated singleplayer server
+Stacktrace:
+	at net.minecraft.client.world.ClientWorld.fillCrashReport(ClientWorld.java:530)
+	at net.minecraft.client.Minecraft.addGraphicsAndWorldToCrashReport(Minecraft.java:2296)
+	at net.minecraft.client.Minecraft.run(Minecraft.java:592)
+	at net.minecraft.client.main.Main.main(Main.java:191)
+	at Start.main(Start.java:11)
+
+-- System Details --
+Details:
+	Minecraft Version: 1.16.5
+	Minecraft Version ID: 1.16.5
+	Operating System: Windows 11 (amd64) version 10.0
+	Java Version: 21.0.7, Oracle Corporation
+	Java VM Version: Java HotSpot(TM) 64-Bit Server VM (mixed mode, sharing), Oracle Corporation
+	Memory: 133334224 bytes (127 MB) / 519045120 bytes (495 MB) up to 2067791872 bytes (1972 MB)
+	CPUs: 8
+	JVM Flags: 0 total; 
+	Launched Version: mcp
+	Backend library: LWJGL version 3.2.2 build 10
+	Backend API: Intel(R) UHD Graphics GL version 4.6.0 - Build 31.0.101.4255, Intel
+	GL Caps: Using framebuffer using OpenGL 3.0
+	Using VBOs: Yes
+	Is Modded: Very likely; Jar signature invalidated
+	Type: Client (map_client.txt)
+	Graphics mode: fancy
+	Resource Packs: 
+	Current Language: English (US)
+	CPU: 8x 12th Gen Intel(R) Core(TM) i3-1215U
+	OptiFine Version: OptiFine_1.16.5_HD_U_G8
+	OptiFine Build: ~~NULL~~
+	Render Distance Chunks: 2
+	Mipmaps: 4
+	Anisotropic Filtering: 1
+	Antialiasing: 0
+	Multitexture: false
+	Shaders: null
+	OpenGlVersion: 4.6.0 - Build 31.0.101.4255
+	OpenGlRenderer: Intel(R) UHD Graphics
+	OpenGlVendor: Intel
+	CpuCount: 8
